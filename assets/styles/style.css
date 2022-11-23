@@ -56,8 +56,8 @@ h1, h2 h3, h4, h5, p, a
 
 h1
 {
-    font-size: 4rem;
-
+    font-size: 3rem;
+    font-style: bold;
 }
 
 #outerContainer 
@@ -95,14 +95,6 @@ nav > ul > li
 
 .logo 
 {
-    width: 480px;
-}
-
-.merch {
-    margin: 10rem auto;
-}
-
-.tshirts
-{
-    width: 40rem;
+    width: 60%;
+    max-width: 30rem;
 }
