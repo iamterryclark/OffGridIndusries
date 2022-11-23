@@ -49,17 +49,6 @@ table {
 
 /* End of reset */
 
-h1, h2 h3, h4, h5, p, a
-{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-h1
-{
-    font-size: 4rem;
-
-}
-
 #outerContainer 
 {
     width: 100vw;
@@ -68,22 +57,19 @@ h1
     background-position: center center;
     background-size: cover;
     transition: background 2s linear;
-    display: grid;
-    align-items: center;
 }
 
 header 
 {
     display: grid;
     justify-items: center;
+    position: relative;
     mix-blend-mode: difference;
     filter: invert(1);
+    z-index: 1;
 }
 
 nav {
-    display: grid;
-    align-content: center;
-
     margin-top: 2rem;
 }
 
@@ -95,7 +81,7 @@ nav > ul > li
 
 .logo 
 {
-    width: 480px;
+    width: 180px;
 }
 
 .merch {
