@@ -49,34 +49,35 @@ table {
 
 /* End of reset */
 
-#outerContainer 
-{
-    width: 100vw;
-    height: 100vh;
-    background-image: url("../images/kam001.jpg");
-    background-position: center center;
-    background-size: cover;
-    transition: background 2s linear;
+@font-face {
+    font-family: "LibreBaskervile-Bold";
+    src: url("../fonts/LibreBaskerville-Bold.ttf");
 }
+
+h1 
+{
+    font-family: 'LibreBaskervile-Bold';
+    font-size: 4rem;
+}
+
 
 header 
 {
     display: grid;
     justify-items: center;
-    position: relative;
-    mix-blend-mode: difference;
-    filter: invert(1);
-    z-index: 1;
+    background-color: #a9d30d;
+    padding: 1rem;
 }
 
 nav {
     margin-top: 2rem;
 }
 
-nav > ul > li
+.socials > ul > li
 {
     display: inline;
     padding: 10px;
+    font-size: 2rem;
 }
 
 .logo 
@@ -84,8 +85,45 @@ nav > ul > li
     width: 180px;
 }
 
-.merch {
-    margin: 10rem auto;
+#splash 
+{
+    background-image: url("../images/kam001.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background 2s linear;
+    padding: 15rem 0px;    
+}
+
+#splash > h1
+{
+    text-align: center;
+    font-size: 10rem;
+    mix-blend-mode: difference;
+    filter: invert(1);
+}
+
+.section{
+    display: grid;
+    justify-content: center;
+    padding: 10rem 0;
+    color:black;
+    text-align: center;
+}
+
+.section:nth-child(even)
+{
+    background-color: #a9d30d;
+}
+
+.section > h1 
+{
+    padding-bottom: 3rem;
+}
+
+.section > iframe
+{
+    padding-bottom: 5rem;
 }
 
 .tshirts
