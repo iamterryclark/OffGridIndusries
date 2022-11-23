@@ -56,22 +56,32 @@ table {
 
 h1 
 {
-    font-family: 'LibreBaskervile-Bold';
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
+a:visited, a
+{
+    color:black;
+    transition: color 1s linear;
+}
+
+a:hover {
+    color:purple;
+    transition: color 0.5s linear;
+}
 
 header 
 {
     display: grid;
     justify-items: center;
     background-color: #a9d30d;
-    padding: 1rem;
+    height: 18rem;
 }
 
-nav {
-    margin-top: 2rem;
-}
+
 
 .socials > ul > li
 {
@@ -98,7 +108,7 @@ nav {
 #splash > h1
 {
     text-align: center;
-    font-size: 10rem;
+    font-size: 8rem;
     mix-blend-mode: difference;
     filter: invert(1);
 }
