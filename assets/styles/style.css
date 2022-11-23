@@ -58,6 +58,7 @@ h1
 {
     font-size: 3rem;
     font-style: bold;
+    text-align: center;
 }
 
 #outerContainer 
@@ -97,4 +98,12 @@ nav > ul > li
 {
     width: 60%;
     max-width: 30rem;
+}
+
+
+@media screen and (max-width: 400px) {
+    h1
+    {
+        font-size: 1.8rem;
+    }
 }
