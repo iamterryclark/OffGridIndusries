@@ -102,11 +102,20 @@ header
     background-repeat: no-repeat;
     transition: background 2s linear;
     padding: 15rem 0px;    
+    text-align: center;
 }
 
 #splash > h1
 {
-    text-align: center;
+    font-size: 10rem;
+    mix-blend-mode: difference;
+    filter: invert(1);
+    letter-spacing: 10px;
+    user-select: none;
+}
+
+#splash > a > i
+{
     font-size: 10rem;
     mix-blend-mode: difference;
     filter: invert(1);
@@ -136,7 +145,19 @@ header
     padding-bottom: 5rem;
 }
 
-.tshirts
-{
-    width: 40rem;
+#gototop {
+    position:fixed;
+    right:  3rem;
+    bottom: 2rem;
+    background-color: #a9d30d;
+    border: 1px solid black;
+    border-radius: 10%;
+    mix-blend-mode: difference;
+    vertical-align: middle;
+    height: 50px;
+}
+
+#gototop > a > i {
+    font-size: 2rem;
+    padding: 1rem;
 }

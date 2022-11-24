@@ -49,9 +49,14 @@ table {
 
 /* End of reset */
 
+@font-face {
+    font-family: "Anton";
+    src: url("../fonts/Anton-Regular.ttf");
+}
+
 h1, h2 h3, h4, h5, p, a
 {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Anton'
 }
 
 h1
