@@ -49,18 +49,28 @@ table {
 
 /* End of reset */
 
+html{
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: "Anton";
     src: url("../fonts/Anton-Regular.ttf");
 }
 
-h1 
+h1
 {
     font-family:'Anton';
     font-size: 4rem;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 0.5rem;
+}
+
+p 
+{
+    font-family:'Anton';
+    font-size: 1rem;
 }
 
 a:visited, a
@@ -78,8 +88,9 @@ header
 {
     display: grid;
     justify-items: center;
+    align-content: center;
     background-color: #a9d30d;
-    height: 18rem;
+    padding: 1rem;
 }
 
 .socials > ul > li
@@ -92,6 +103,7 @@ header
 .logo 
 {
     width: 180px;
+    padding-bottom: 1rem;
 }
 
 #splash 
@@ -140,6 +152,13 @@ header
     padding-bottom: 3rem;
 }
 
+.section > p 
+{
+    padding-bottom: 3rem;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
 .section > iframe
 {
     padding-bottom: 5rem;
@@ -160,4 +179,62 @@ header
 #gototop > a > i {
     font-size: 2rem;
     padding: 1rem;
+}
+
+@media screen and (max-width: 400px) {
+
+    .socials > ul > li
+    {
+        font-size: 1.2rem;
+    }
+
+    .logo 
+    {
+        width: 150px !important;
+    }
+
+    .section{
+        padding: 5rem 0;
+    }
+    .section > p 
+    {
+        max-width: 70%;
+    }
+
+    #splash 
+    {
+        padding: 4rem 0px;    
+    }
+
+    #splash > h1
+    {
+        font-size: 4.0rem !important;
+    }
+
+    #splash > a > i
+    {
+        font-size: 5rem;
+    }
+
+    h1
+    {
+        font-family:'Anton';
+        font-size: 3.5rem;
+    }
+
+    .section > iframe
+    {
+        padding-bottom: 3rem;
+    }
+
+    #gototop {
+        right:  2rem;
+        bottom: 1rem;
+        height: 25px;
+    }
+    
+    #gototop > a > i {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
 }
