@@ -7,15 +7,283 @@
     <title>OffGrid Industries</title>
     <script src="https://kit.fontawesome.com/aa96ce64fd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/styles/style.css">
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
 </head>
 <body>
     <div id="outerContainer">
         <header>
             <img class="logo" src="./assets/images/offgrid-logo.png" alt="OffGrid Logo">
-            <h1>Under Construction</h1>
+            <p>Brought to you by Kam-Bu</p>
+            <nav class="socials">
+                <ul >
+                    <li><a href="https://www.instagram.com/offgrid.xyz/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/itskambu" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/kamb_u/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="mailto:kam3ulife@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                    <!-- <li><a href="tel:+447700158400" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li> -->
+                </ul>
+            </nav>
         </header>
+        <div id="splash">
+            <h1>For all things <br/> off grid</h1>
+            <a href="#shop"><i class="fa fa-sort-down"></i></a>
+        </div>
+        <div id="shop" class="section">
+            <h1>Shop</h1>
+            <p>All profits donated to <a href="https://brixtonsoupkitchen.com/" target="_blank">Brixton Soup Kitchen</a></p>
+            <div id='collection-component-1669325554623'></div>
+            <p>The BSK is a welcoming community hub. It is a secure, warm place to visit where not only will a hot lunch be served, there is also a food bank, a clothes bank and legal advice on Thursday evenings. Several of the service users have been helped to find employment or housing and others have gained the confidence to enrol in training & further education.</p>
+              
+            <p>The BSK also does remarkable outreach work on a regular basis, taking hot food and clothing to rough sleepers and families in need across London</p>
+          </div>
+        <div class="section">
+            <h1>Music</h1>
+
+            <iframe 
+                style="border-radius:12px" 
+                src="https://open.spotify.com/embed/album/3feqqtHvhWrYMvAQEaoVS8?utm_source=generator"
+                width="100%" 
+                height="80" 
+                frameBorder="0" 
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+            </iframe>
+
+            <iframe 
+                style="border-radius:12px" 
+                src="https://open.spotify.com/embed/album/5dbRHFzntsCON0YzAvvM4v?utm_source=generator"
+                width="100%" 
+                height="80" 
+                frameBorder="0" 
+                allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+            </iframe>
+
+            <iframe 
+                style="border-radius:12px" 
+                src="https://open.spotify.com/embed/album/3hhuMQnbEutgqMa4o8063u?utm_source=generator"
+                width="100%" 
+                height="380" 
+                frameBorder="0" 
+                allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+    <div id="gototop">
+        <a href="#outerContainer"><i class="fa fa-sort-up"></i></a>
     </div>
 </body>
 <script src="./assets/scripts/app.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'off-grid-industires.myshopify.com',
+      storefrontAccessToken: '1002b67448e8f4d3863860d61b69fa33',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('collection', {
+        id: '428725731643',
+        node: document.getElementById('collection-component-1669325554623'),
+        moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(33.33333% - 30px)",
+          "margin-left": "30px",
+          "margin-bottom": "50px",
+          "width": "calc(33.33333% - 30px)"
+        },
+        "img": {
+          "height": "calc(100% - 15px)",
+          "position": "absolute",
+          "left": "0",
+          "right": "0",
+          "top": "0"
+        },
+        "imgWrapper": {
+          "padding-top": "calc(75% + 15px)",
+          "position": "relative",
+          "height": "0"
+        }
+      },
+      "title": {
+        "font-size": "20px"
+      },
+      "button": {
+        "font-weight": "bold",
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px",
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000",
+          "background-color": "#98be0c"
+        },
+        "background-color": "#a9d30d",
+        ":focus": {
+          "background-color": "#98be0c"
+        },
+        "border-radius": "0px",
+        "padding-left": "61px",
+        "padding-right": "61px"
+      },
+      "quantityInput": {
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px"
+      }
+    },
+    "contents": {
+      "button": false,
+      "buttonWithQuantity": true
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-30px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-weight": "bold",
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px",
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000",
+          "background-color": "#98be0c"
+        },
+        "background-color": "#a9d30d",
+        ":focus": {
+          "background-color": "#98be0c"
+        },
+        "border-radius": "0px",
+        "padding-left": "61px",
+        "padding-right": "61px"
+      },
+      "quantityInput": {
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px"
+      },
+      "title": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "bold",
+        "font-size": "26px",
+        "color": "#4c4c4c"
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {
+    "styles": {
+      "label": {
+        "font-weight": "bold"
+      },
+      "select": {
+        "font-weight": "bold"
+      }
+    }
+  },
+  "cart": {
+    "styles": {
+      "button": {
+        "font-weight": "bold",
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px",
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000",
+          "background-color": "#98be0c"
+        },
+        "background-color": "#a9d30d",
+        ":focus": {
+          "background-color": "#98be0c"
+        },
+        "border-radius": "0px"
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout"
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-weight": "bold",
+        "background-color": "#a9d30d",
+        ":hover": {
+          "background-color": "#98be0c"
+        },
+        ":focus": {
+          "background-color": "#98be0c"
+        }
+      },
+      "count": {
+        "font-size": "16px",
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000"
+        }
+      },
+      "iconPath": {
+        "fill": "#000000"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
 </html>
