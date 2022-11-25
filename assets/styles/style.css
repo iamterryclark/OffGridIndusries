@@ -54,7 +54,7 @@ table {
     src: url("../fonts/Anton-Regular.ttf");
 }
 
-h1, h2 h3, h4, h5, p, a
+h1, h2 h3, h4, h5, a
 {
     font-family:'Anton'
 }
