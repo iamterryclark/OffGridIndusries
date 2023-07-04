@@ -135,7 +135,8 @@ header
 }
 
 .section{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 10rem 0;
     color:black;
